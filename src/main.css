@@ -1,0 +1,207 @@
+.sidebar{
+    min-height: 30vh;
+
+}
+.left-site{
+    min-height: 100vh;
+    position: fixed;
+    width: 17%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    transition: 0.5s linear;
+}
+.right-site{
+    width: 75%;
+    margin-left: 25%;
+    transition: 0.5s linear;
+    position: relative;
+}
+.openRight-site{
+    height: 100vh;
+    width: 100%;
+    margin-left: 0;
+    transition: 0.5s linear;
+}
+.navbar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    cursor: pointer;
+    position: absolute;
+    right: 90px;
+}
+.user{
+    background-color: #d2d2d2;
+}
+.closeLeft-site{
+    min-height: 100vh;
+    position: fixed;
+    width: 0;
+    box-shadow: none;
+    transition: 0.5s linear;
+}
+ul{
+    padding-left: 0;
+}
+
+ul li{
+    display: flex;
+    width: 100%;
+    margin: 30px auto;
+    margin-left: 60px;
+
+}
+ul li a{
+    font-size: 17px;
+    color:#d2d2d2;
+    text-decoration: none !important;
+
+}
+
+ul li a:hover{
+    color: #2f2f2f;
+    text-decoration: none;
+}
+ul li a i:hover{
+    color: #0fbf0f;
+}
+.nav-item{
+    width: 45.5%;
+    margin:0;
+    text-align: center;
+    display: block;
+    background-color: #f1eeee;
+}
+.nav-item:nth-child(1){
+    margin-left: 12px;
+}
+.nav-item:hover{
+    border-bottom: #0fbf0f !important;
+}
+.nav-tabs{
+    padding: 0;
+    border: none !important;
+
+}
+.nav-link{
+    padding:10px 0;
+    border: none !important;
+    color: #bfbebe !important;
+}
+.nav-link:hover{
+    color: #2f2f2f !important;
+}
+.round{
+    width: 50px;
+    height: 50px;
+}
+.spanFont{
+    font-size: 12px;
+}
+.cardHover{
+    width: 100%;
+
+}
+.cardHover:hover{
+    background-color: #28a745;
+    color:#fff;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+.cardHover:hover h5{
+    color:#fff !important;
+
+}
+/*.scrollItems{*/
+/*    overflow-y: scroll;*/
+/*}*/
+.btn-info{
+    width: 100px !important;
+    font-size: 20px;
+}
+.progress-bar{
+    background-color: blue;
+}
+.pl-5 {
+    padding-left: 60px;
+}
+.form-control{
+    width: 300px;
+    color: #d2d2d2;
+}
+.positionparent{
+    position: relative;
+    overflow-y: scroll;
+    height: 590px;
+}
+.positionform{
+    position: fixed;
+    bottom: 0px;
+    width: 30.5%;
+    border: 0;
+    border-radius: 0;
+}
+.fileinput{
+    position: fixed;
+    bottom: 0px;
+    z-index: 12;
+    background-color: #fff;
+}
+.positionBtn{
+    position: fixed;
+    bottom: 0px;
+    right: 260px;
+    border: none !important;
+    padding-right: 25px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+.sendedText{
+    background-color: #f5efbd;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 3px 8px;
+    /*width:max-content;*/
+}
+.span{
+    padding: 30px 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.icons{
+    background-color: #e2dfdf;
+    padding: 15px;
+}
+.paragraph{
+    font-size: 12px;
+    color: #868585;
+}
+.accountbtn{
+    border: none;
+    background-color: #fff;
+}
+.color1{
+    color: #d2d2d2;
+    font-size: 20px;
+}
+.color2{
+    color: #ffe319;
+    font-size: 20px;
+}
+.bordered{
+    border-left: 2px solid green;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #d2d2d2;
+    text-align: left;
+    padding: 10px;
+}
+/*.fab.fa-telegram-plane{*/
+/*    color: blue;*/
+/*    position: fixed;*/
+/*    bottom: 10px;*/
+/*    right: 200px;*/
+/*    font-size: 20px;*/
+/*}*/
