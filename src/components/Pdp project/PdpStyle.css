@@ -1,0 +1,32 @@
+.row{
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    width: 165px;
+    height: 44.59px;
+    left: 165px;
+    top: 26px;
+
+    background: #000000;
+}
+.vector{
+    position: absolute;
+    width: 33.75px;
+    height: 10.95px;
+    left: 431.62px;
+    top: 43.86px;
+
+    background: #000000;
+}
+p{
+    position: absolute;
+    width: 142px;
+    height: 27px;
+    left: 486px;
+    top: 35px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-size: 22px;
+
+}

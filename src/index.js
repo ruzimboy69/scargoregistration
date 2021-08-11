@@ -1,13 +1,16 @@
-import ReactDom from 'react-dom'
-import React from 'react'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './main.css'
+import ReactDom from "react-dom";
 import App from "./App";
-import "./Parking.css";
+import {Provider} from "react-redux";
+import store   from "./components/store";
+import {BrowserRouter} from "react-router-dom";
+
 
 
 ReactDom.render(
-    <div>
-        <App/>
-    </div>
-    , document.getElementById('root'));
+    <Provider store={store}>
+      <BrowserRouter>
+              <App/>
+      </BrowserRouter>
+</Provider>,document.getElementById("root"));
