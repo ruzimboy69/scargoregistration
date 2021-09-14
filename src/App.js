@@ -67,19 +67,34 @@
 
 
 import React from 'react';
-import {Switch,Route} from "react-router-dom";
+import {Switch, Route, BrowserRouter} from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Info from "./pages/Info";
+import AdminLayout from "./pages/AdminLayout";
+import News from "./dostlikdoncomponents/News";
+import Menus from "./dostlikdoncomponents/Menus";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import NotFound from "./dostlikdoncomponents/NotFound";
+import PrivateRoute from "./dostlikdoncomponents/PrivateRoute";
 
 function App(props) {
     return (
         <div>
-           <Switch>
-               <Route path={"/"} exact component={Home}/>
-               <Route path={"/login"} component={Login}/>
-               <Route path={"/Info"}  component={Info}/>
-           </Switch>
+          <BrowserRouter>
+              <Switch>
+                  <Route path={"/"} exact component={Home}/>
+                  <Route path={"/login"} exact component={Login}/>
+                  <PrivateRoute path={"/Info"} exact  component={Info}/>
+                  <PrivateRoute path={"/Admin"}  exact component={AdminLayout}/>
+                  <PrivateRoute path={"/admin/news"} exact component={News}/>
+                  <PrivateRoute path={"/admin/menu"} exact component={Menus}/>
+                  <Route component={NotFound}/>
+              </Switch>
+          </BrowserRouter>
+            <ToastContainer/>
+
         </div>
     );
 }

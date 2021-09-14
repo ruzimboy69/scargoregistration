@@ -1,0 +1,219 @@
+.admin-navbar {
+  height: 50px;
+  border: 1px solid maroon;
+}
+.admin-layout {
+  display: flex;
+  .left-side{
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    width: 20%;
+    height: calc(100vh - 50px);
+    background-color: #00AB7E;
+    padding: 20px 40px;
+    .admin{
+      display: flex;
+      .circle{
+        width: 50px;
+        background-color: white;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        background: {
+          image:url("images/hacker.png");
+          size:50%;
+          repeat: no-repeat;
+          position: center center;
+        };
+        justify-content: center;
+        img{
+          width: 60%;
+        }
+      }
+      .userName{
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        .status{
+          color: white;
+          font-size: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+    .nav{
+      margin-top: 50px;
+      .nav-link{
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+      }
+    }
+  }
+  .right-side{
+    padding: 20px 50px;
+    width: calc(100vw - 20%);
+    height: calc(100vh - 50px);
+  }
+}
+.header{
+
+  .navbar-top {
+    background: #FAFAFA !important;
+    height: 80px !important;
+
+    .navbar-brand {
+      margin-right: 60px !important;
+      color: #008F48;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 100%;
+      /* identical to box height, or 22px */
+
+      letter-spacing: -0.02em;
+
+      .home {
+        position: absolute;
+        top: 25%;
+        left: 21.5%;
+      }
+    }
+
+    .collapse {
+      .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        div {
+          display: flex;
+          align-items: center;
+
+          .language {
+            margin-right: 45px;
+          }
+
+          .btn {
+            img {
+              margin-right: 9px;
+            }
+
+
+            border-radius: 10px !important;
+          }
+        }
+
+        .nav-item {
+          .nav-link {
+            .input {
+              input[type="text"] {
+                width: 401px;
+                padding-left: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-bottom {
+    background: #FFFFFF !important;
+    box-shadow: 0 2px 2px rgba(204, 204, 204, 0.51);
+    height: 70px !important;
+
+    .navbar-brand {
+      margin-right: 35px !important;
+      background: #008F48;
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      position: relative;
+    }
+
+    .collapse {
+      .navbar-nav {
+        width: 76%;
+      }
+    }
+
+  }
+}
+
+.header-carousel {
+  height: calc(100vh - 150px);
+  background: {
+    image: url("images/bgImg.png");
+    repeat: no-repeat;
+    size: 100%;
+    position: center center;
+  };
+  .item{
+    text-align: center;
+    padding-top: 60px;
+   .text{
+     font-family: Inter;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 32px;
+     line-height: 42px;
+     margin-top: 20px;
+     /* or 131% */
+
+     text-align: center;
+     letter-spacing: -0.02em;
+
+     color: #FFFFFF;
+
+   }
+  }
+  .slick-slider{
+    overflow-x: hidden;
+    width: 100%;
+    height: calc(100vh - 150px);
+    .slick-dots{
+      color: black;
+      bottom:30px;
+      height: 20px;
+      li{
+        button{
+          &::before{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .slick-prev{
+      left:50px;
+      z-index: 10;
+      background: rgba(166,166,166,0.7);
+      backdrop-filter: blur(4px);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      &:before{
+        content: url("images/prev.png");
+      }
+    }
+    .slick-next{
+      right: 50px;
+      background: rgba(166,166,166,0.7);
+      backdrop-filter: blur(4px);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      &:before{
+        content: url("images/next.png");
+      }
+    }
+  }
+}
+
+.table-striped {
+  background-color: #0fbf0f;
+}
