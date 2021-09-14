@@ -21,7 +21,6 @@ class Menus extends Component {
         this.props.updateState({
             generateUrl:this.url(e.target.value)
         })
-        console.log(this.)
     };
     addMenus=(event,values)=>{
         this.props.setMenus(values)
